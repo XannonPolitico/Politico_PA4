@@ -7,10 +7,12 @@
 
 ## A. VISAYAS COMMUNICATION DATAFRAME
 We are required to create a dataframe labeled as `VisComm` consisting of students whose Hometown is Visayas and whose track is Communication. Displaying only the columns labeled as Name, Gender, Math, Electronics, Average and also its number of rows.
-* `board["Average"] = board[["Math", "Electronics", "GEAS", "Communication"]].mean(axis=1)` - Creates a new column where it displays the average of the students grades on all of their subjects.
-* `VisComm = board.loc[(board["Hometown"] == "Visayas") & (board["Track"] == "Communication")` - Assigns the dataframe and filters the dataframe to show students whose hometown is Visayas and that their track is Communication.
-* `,["Name", "Gender","Math","Electronics","Average"]]` - Filters the dataframe more to only display the Name, Gender, Math, Electronics, and Average.
-* `VisComm.shape[0]` - Displays the number of rows.
+* `board["Average"]` - Assigns the name for the new column
+*  `= board[["Math", "Electronics", "GEAS", "Communication"]].mean` - Calculates the average of the students grades on all of their subjects.
+*  `(axis=1)` - Assigns the new line into a column. 
+* `VisComm = board.loc[(board["Hometown"] == "Visayas") & (board["Track"] == "Communication")` - Assigns the dataframe and filters the dataframe to display students whose hometown is Visayas and that their track is Communication.
+* `,["Name", "Gender","Math","Electronics","Average"]]` - Filters the dataframe further to only display the Name, Gender, Math, Electronics, and Average.
+* `VisComm.shape[0]` - Displays the number of rows of the dataframe.
 
 ## B. VISAYAS FEMALE DATAFRAME
 We are required to created a dataframe labeled as `VisFemale` consisting of students whose Hometown is Visayas and whose Gender are Female. Displaying only the columns labeled as Name, Track, GEAS, Electronics, Average. After that, we also display the students whose average is at least 60.
